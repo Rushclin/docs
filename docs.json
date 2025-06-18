@@ -56,26 +56,7 @@
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/logo.png",
@@ -84,21 +65,31 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
+        "label": "Contact",
         "href": "mailto:hi@mintlify.com"
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
+    ]
   },
   "footer": {
     "socials": {
       "x": "https://x.com/useGenuka",
-      "github": "https://github.com/genuka",
+      "facebook": "https://facebook.com/genuka",
       "linkedin": "https://linkedin.com/company/useGenuka"
-    }
+    },
+    "links": [
+      {
+        "header": "Links",
+        "items": [
+          {
+            "href": "https://djopa.notion.site/Careers-55541ea6aceb4b6688fec90c8b6e2fda?pvs=4",
+            "label": "Carrers"
+          },
+          {
+            "href": "https://djopa.notion.site/Become-an-Affiliate-85ab89a2dafb4d3fabb78c3ea7b9d078?pvs=4",
+            "label": "Affiliate"
+          }
+        ]
+      }
+    ]
   }
 }
