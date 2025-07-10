@@ -13,28 +13,30 @@
     "dismissible": true
   },
   "navigation": {
+    "global": {
+      "anchors": [{ "anchor": "Website", "href": "https://genuka.com" }]
+    },
     "tabs": [
       {
         "tab": "Guides",
         "groups": [
           {
-            "group": "GETTING STARTED",
+            "group": "Get started",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "getting-started/introduction",
+              "getting-started/quickstart",
+              "getting-started/authentication",
+              "getting-started/api-response",
+              "getting-started/handling-errors"
             ]
           },
           {
-            "group": "Essentials",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
-            ]
+            "group": "Webhooks",
+            "pages": ["getting-started/webhook"]
+          },
+          {
+            "group": "Submition",
+            "pages": ["getting-started/app-submit"]
           }
         ]
       },
@@ -54,9 +56,7 @@
           },
           {
             "group": "Authentication",
-            "pages": [
-              "api-reference/endpoint/authentication/register"
-            ]
+            "pages": ["api-reference/endpoint/authentication/register"]
           },
           {
             "group": "Endpoint Examples",
@@ -81,7 +81,7 @@
         "label": "Support",
         "href": "mailto:contact@genuka.com"
       },
-       {
+      {
         "label": "Blog",
         "href": "https://notes.genuka.com"
       }
