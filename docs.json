@@ -8,6 +8,10 @@
     "dark": "#FD982E"
   },
   "favicon": "/favicon.ico",
+  "banner": {
+    "content": "Welcome to our documentation, Genuka thanks you for its daily use",
+    "dismissible": true
+  },
   "navigation": {
     "tabs": [
       {
@@ -33,6 +37,9 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "SDK & Librairies"
       },
       {
         "tab": "API Reference",
@@ -71,10 +78,19 @@
   "navbar": {
     "links": [
       {
-        "label": "Contact",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Support",
+        "href": "mailto:contact@genuka.com"
+      },
+       {
+        "label": "Blog",
+        "href": "https://notes.genuka.com"
       }
-    ]
+    ],
+    "primary": {
+      "href": "https://app-platform.genuka.com",
+      "label": "App platform",
+      "type": "button"
+    }
   },
   "footer": {
     "socials": {
