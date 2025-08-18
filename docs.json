@@ -24,30 +24,40 @@
             "group": "Get started",
             "pages": [
               "getting-started/introduction",
-              "getting-started/quickstart",
+              "getting-started/quickstart"
+            ]
+          },
+          {
+            "group": "🔐 Authentification & Sécurité", 
+            "pages": [
               "getting-started/authentication",
               "getting-started/api-response",
               "getting-started/handling-errors"
             ]
           },
           {
-            "group": "Webhooks",
-            "pages": ["getting-started/webhook"]
-          },
-          {
-            "group": "Submition",
-            "pages": ["getting-started/app-submit"]
+            "group": "🔗 Intégrations",
+            "pages": [
+              "getting-started/webhook",
+              "getting-started/app-submit"
+            ]
           }
         ]
       },
       {
-        "tab": "SDK & Librairies"
+        "tab": "SDK & Librairies",
+        "groups": [
+          {
+            "group": "SDKs Officiels",
+            "pages": []
+          }
+        ]
       },
       {
         "tab": "API Reference",
         "groups": [
           {
-            "group": "API Documentation",
+            "group": "🏁 Démarrage API",
             "pages": [
               "api-reference/introduction",
               "api-reference/installation",
@@ -55,11 +65,11 @@
             ]
           },
           {
-            "group": "Authentication",
+            "group": "🔑 Authentification",
             "pages": ["api-reference/endpoint/authentication/register"]
           },
           {
-            "group": "Endpoint Examples",
+            "group": "📋 Endpoints",
             "pages": [
               "api-reference/endpoint/get",
               "api-reference/endpoint/create",
