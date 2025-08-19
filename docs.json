@@ -27,7 +27,8 @@
               "getting-started/quickstart",
               "getting-started/authentication",
               "getting-started/api-response",
-              "getting-started/handling-errors"
+              "getting-started/create-app",
+              "getting-started/submit-app"
             ]
           },
           {
@@ -70,6 +71,12 @@
               "api-reference/endpoint/create",
               "api-reference/endpoint/delete",
               "api-reference/endpoint/webhook"
+            ]
+          },
+          {
+            "group": "Applications",
+            "pages": [
+              "api-reference/endpoint/application/create"
             ]
           }
         ]

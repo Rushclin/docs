@@ -1,0 +1,120 @@
+---
+title: "Creating and Submitting Your Application"
+sidebarTitle: "App Creation"
+description: "How to create your application, prepare it for integration, and submit it to Genuka for validation and approval."
+---
+
+# Creating and Submitting Your Application
+
+This guide explains the process of creating your application, deploying it, and submitting it to Genuka for validation and approval.  
+
+---
+
+## 1. Overview
+
+Before your integration can go live, you need to:
+
+1. Build your application (backend and/or frontend).
+2. Configure your webhooks and callback URLs.
+3. Deploy it to a publicly accessible server.
+4. Submit the application details to Genuka for review and approval.
+
+Once approved, your application will be allowed to interact with the Genuka API in production.
+
+---
+
+## 2. Application Requirements
+
+When creating an application, make sure it follows these guidelines:
+
+- **Publicly Accessible**: Your app must be hosted on a secure (HTTPS) server accessible over the internet.
+- **Stable Environment**: Avoid using temporary services; ensure uptime and reliability.
+- **Webhooks Support**: If your integration requires receiving real-time notifications (e.g., order updates, payments), expose valid webhook endpoints.
+- **Data Security**: Handle all credentials (API keys, access tokens) securely.
+
+---
+
+## 3. Steps to Create an Application
+
+### Step 1: Develop Your Application
+- Use your preferred technology stack (Node.js, PHP, Python, Java, etc.).
+- Integrate with the **Genuka API** following the authentication and endpoint documentation.
+- Implement the required business logic (e.g., syncing products, processing orders, handling events).
+
+### Step 2: Prepare Webhooks (Optional but Recommended)
+If your application must react to Genuka events (like order created, order updated, payment status changed):
+
+- Implement endpoints such as:
+  - `POST https://yourdomain.com/webhooks/genuka/order`
+  - `POST https://yourdomain.com/webhooks/genuka/payment`
+
+- Ensure these endpoints:
+  - Accept `POST` requests with JSON payloads.
+  - Respond quickly with `200 OK`.
+  - Validate signatures (if required for security).
+
+### Step 3: Deploy Your Application
+- Deploy your application on a secure production server.
+- Ensure it uses **HTTPS** (TLS/SSL).
+- Verify that all routes and webhook URLs are functional and reachable.
+
+### Step 4: Gather Application Information
+Before submission, prepare the following details:
+
+- **Application Name**: Human-readable name of your integration.
+- **Application Description**: Brief explanation of what your app does.
+- **Public URL**: Main link where Genuka team can view your app (if frontend).
+- **Webhook URLs**: List of endpoints your app exposes (if any).
+- **Contact Information**: Developer/company contact email.
+
+---
+
+## 4. Submitting to Genuka
+
+Once your app is ready:
+
+1. Log in to your Genuka developer dashboard (or contact the integrations team).
+2. Navigate to **App Submission**.
+3. Provide the following details:
+   - Application name
+   - Public deployment link
+   - Webhook URLs
+   - Technical documentation (if available)
+   - Contact information
+4. Submit for **review and validation**.
+
+---
+
+## 5. Validation Process
+
+- **Technical Review**: The Genuka team verifies that your endpoints are reachable and your app correctly integrates with the API.
+- **Security Review**: Basic checks to ensure no sensitive data leaks or insecure endpoints.
+- **Approval/Feedback**: 
+  - If approved → You receive confirmation, and your app is whitelisted for production access.
+  - If rejected → Feedback will be shared, and you can re-submit after corrections.
+
+---
+
+## 6. After Approval
+
+Once approved:
+
+- You can start using your **production API keys**.
+- Your app will officially be recognized as a validated Genuka integration.
+- You will be notified of future updates or changes affecting integrations.
+
+---
+
+## Example Submission Payload (For Reference)
+
+```json
+{
+  "application_name": "My WooCommerce Sync",
+  "description": "This app synchronizes WooCommerce products and orders with Genuka.",
+  "public_url": "https://myapp.example.com",
+  "webhooks": [
+    "https://myapp.example.com/webhooks/genuka/order",
+    "https://myapp.example.com/webhooks/genuka/payment"
+  ],
+  "contact_email": "developer@example.com"
+}
