@@ -24,12 +24,7 @@
             "group": "Get started",
             "pages": [
               "getting-started/introduction",
-              "getting-started/quickstart"
-            ]
-          },
-          {
-            "group": "🔐 Authentification & Sécurité", 
-            "pages": [
+              "getting-started/quickstart",
               "getting-started/authentication",
               "getting-started/api-response",
               "getting-started/handling-errors"
