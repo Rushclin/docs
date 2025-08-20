@@ -35,7 +35,7 @@
             "group": "🔗 Webhooks",
             "pages": [
               "getting-started/webhook",
-              "getting-started/app-submit"
+              "getting-started/webhook-verify"
             ]
           }
         ]
