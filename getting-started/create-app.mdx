@@ -1,73 +1,57 @@
 ---
-title: "Creating and Submitting Your Application"
-sidebarTitle: "App Creation"
+title: "Creating and submitting your application"
+sidebarTitle: "App creation"
 description: "How to create your application, prepare it for integration, and submit it to Genuka for validation and approval."
 ---
 
-# Creating and Submitting Your Application
-
 This guide explains the process of creating your application, deploying it, and submitting it to Genuka for validation and approval.  
 
----
+<Steps>
+  <Step title="Overview">
+    Before your integration can go live, you need to:
 
-## 1. Overview
+- Build your application (backend and/or frontend).
+- Configure your webhooks and callback URLs.
+- Deploy it to a publicly accessible server.
+- Submit the application details to Genuka for review and approval.
 
-Before your integration can go live, you need to:
+Once approved, your application will be allowed to interact with the Genuka API in production in our store.
 
-1. Build your application (backend and/or frontend).
-2. Configure your webhooks and callback URLs.
-3. Deploy it to a publicly accessible server.
-4. Submit the application details to Genuka for review and approval.
+  </Step>
+  <Step title="Application requirements">
+    When creating an application, make sure it follows these guidelines:
+    - Publicly accessible: Your app must be hosted on a secure (HTTPS) server accessible over the internet.
+    - Stable environment: Avoid using temporary services; ensure uptime and reliability.
+    - Webhooks support: If your integration requires receiving real-time notifications (e.g., order updates, customers and other), expose valid webhook endpoints.
+    - Data security: Handle all credentials (API keys, access tokens) securely.
 
-Once approved, your application will be allowed to interact with the Genuka API in production.
+    When creating your application, you will specify the modules you want to have access to, we will develop this in the following sections
 
----
+  </Step>
+  <Step title="Create an application">
+    - Use your preferred technology stack (Node.js, PHP, Python, Java, etc.).
+    - Integrate with the **Genuka API** following the authentication and endpoint documentation.
+    - Implement the required business logic (e.g., syncing products, processing orders, handling events).
+  </Step>
+  <Step title="Prepare Webhooks (Optional but Recommended)">
+   If your application must react to Genuka events (like order created, order updated, payment status changed):
 
-## 2. Application Requirements
+    - Implement endpoints such as:
+      - `POST https://yourdomain.com/webhooks/`
+      - `POST https://yourdomain.com/callback/`
 
-When creating an application, make sure it follows these guidelines:
+    - Ensure these endpoints:
+      - Accept `POST` requests with JSON payloads.
+      - Respond quickly with `200 OK`.
+      - Validate signatures (if required for security).
+  </Step>
+  <Step title="Deploy Your Application">
+      - Deploy your application on a secure production server.
+      - Ensure it uses **HTTPS** (TLS/SSL).
+      - Verify that all routes and webhook URLs are functional and reachable.
+  </Step>
+</Steps>
 
-- **Publicly Accessible**: Your app must be hosted on a secure (HTTPS) server accessible over the internet.
-- **Stable Environment**: Avoid using temporary services; ensure uptime and reliability.
-- **Webhooks Support**: If your integration requires receiving real-time notifications (e.g., order updates, payments), expose valid webhook endpoints.
-- **Data Security**: Handle all credentials (API keys, access tokens) securely.
-
----
-
-## 3. Steps to Create an Application
-
-### Step 1: Develop Your Application
-- Use your preferred technology stack (Node.js, PHP, Python, Java, etc.).
-- Integrate with the **Genuka API** following the authentication and endpoint documentation.
-- Implement the required business logic (e.g., syncing products, processing orders, handling events).
-
-### Step 2: Prepare Webhooks (Optional but Recommended)
-If your application must react to Genuka events (like order created, order updated, payment status changed):
-
-- Implement endpoints such as:
-  - `POST https://yourdomain.com/webhooks/genuka/order`
-  - `POST https://yourdomain.com/webhooks/genuka/payment`
-
-- Ensure these endpoints:
-  - Accept `POST` requests with JSON payloads.
-  - Respond quickly with `200 OK`.
-  - Validate signatures (if required for security).
-
-### Step 3: Deploy Your Application
-- Deploy your application on a secure production server.
-- Ensure it uses **HTTPS** (TLS/SSL).
-- Verify that all routes and webhook URLs are functional and reachable.
-
-### Step 4: Gather Application Information
-Before submission, prepare the following details:
-
-- **Application Name**: Human-readable name of your integration.
-- **Application Description**: Brief explanation of what your app does.
-- **Public URL**: Main link where Genuka team can view your app (if frontend).
-- **Webhook URLs**: List of endpoints your app exposes (if any).
-- **Contact Information**: Developer/company contact email.
-
----
 
 ## 4. Submitting to Genuka
 
