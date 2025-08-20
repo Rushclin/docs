@@ -1,0 +1,35 @@
+---
+title: 'Update'
+openapi: 'PUT /2023-11/developer/apps/01jtg4cys6gvzn95cw71eeq86b'
+playground: "none"
+version: "1.0"
+---
+
+This endpoint allows developers to update his application on Genuka.  
+You will provide basic details such as the application name, description, public URL, and webhook endpoints (if applicable).  
+
+Provide to update app, we passe (facultative).
+
+```json
+{
+    "name": "string",
+    "description": "string",
+    "support_email": "string",
+    "redirect_url": "string",
+    "callback_url": "string",
+    "webhook_url": "string",
+    "scopes": [
+        "orders.create",
+        "products.view",
+        "products.update",
+        "company.*"
+    ],
+    "medias": [
+        {
+            "src": "string",
+            "collection_name": "logo"
+        }
+    ],
+    "terms_of_service_url": "string"
+,   "privacy_policy_url": "string"
+}

@@ -76,7 +76,8 @@
           {
             "group": "Applications",
             "pages": [
-              "api-reference/endpoint/application/create"
+              "api-reference/endpoint/application/create",
+              "api-reference/endpoint/application/update"
             ]
           }
         ]
