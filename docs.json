@@ -23,7 +23,7 @@
           {
             "group": "Get started",
             "pages": [
-              "getting-started/introduction",
+              "index",
               "getting-started/quickstart",
               "getting-started/authentication",
               "getting-started/api-response",
