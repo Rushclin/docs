@@ -53,9 +53,9 @@
         "tab": "API Reference",
         "groups": [
           {
-            "group": "🏁 Démarrage API",
+            "group": "Introduction",
             "pages": [
-              "api-reference/introduction",
+              "api-reference/api-reference",
               "api-reference/installation",
               "api-reference/authentication"
             ]
