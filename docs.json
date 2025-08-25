@@ -14,7 +14,7 @@
   },
   "navigation": {
     "global": {
-      "anchors": [{ "anchor": "Website", "href": "https://genuka.com" }]
+      "anchors": [{ "anchor": "Website", "href": "https://genuka.com", "icon": "link" }]
     },
     "tabs": [
       {
@@ -61,8 +61,13 @@
             ]
           },
           {
-            "group": "🔑 Authentification",
-            "pages": ["api-reference/endpoint/authentication/register"]
+            "group": "Authentication",
+            "pages": [
+              "api-reference/endpoint/authentication/register",
+              "api-reference/endpoint/authentication/login",
+              "api-reference/endpoint/authentication/refresh",
+              "api-reference/endpoint/authentication/logout"
+            ]
           },
           {
             "group": "📋 Endpoints",
