@@ -8,10 +8,6 @@
     "dark": "#FD982E"
   },
   "favicon": "/favicon.ico",
-  "banner": {
-    "content": "Welcome to our documentation, Genuka thanks you for its daily use",
-    "dismissible": true
-  },
   "navigation": {
     "global": {
       "anchors": [{ "anchor": "Website", "href": "https://genuka.com", "icon": "link" }]
