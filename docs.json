@@ -52,8 +52,7 @@
             "group": "Introduction",
             "pages": [
               "api-reference/api-reference",
-              "api-reference/installation",
-              "api-reference/authentication"
+              "api-reference/errors"
             ]
           },
           {
