@@ -59,14 +59,16 @@
             "group": "Authentication",
             "pages": [
               "api-reference/endpoint/authentication/register",
-              "api-reference/endpoint/authentication/login"
+              "api-reference/endpoint/authentication/login",
+              "api-reference/endpoint/authentication/user"
             ]
           },
           {
             "group": "Applications",
             "pages": [
               "api-reference/endpoint/application/create",
-              "api-reference/endpoint/application/update"
+              "api-reference/endpoint/application/update",
+              "api-reference/endpoint/application/list"
             ]
           }
         ]
