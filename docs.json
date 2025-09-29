@@ -68,7 +68,8 @@
             "pages": [
               "api-reference/endpoint/application/create",
               "api-reference/endpoint/application/update",
-              "api-reference/endpoint/application/list"
+              "api-reference/endpoint/application/list",
+              "api-reference/endpoint/application/review"
             ]
           }
         ]
@@ -91,8 +92,8 @@
       }
     ],
     "primary": {
-      "href": "https://app-platform.genuka.com",
-      "label": "App platform",
+      "href": "https://genuka.com",
+      "label": "Dashboard",
       "type": "button"
     }
   },
